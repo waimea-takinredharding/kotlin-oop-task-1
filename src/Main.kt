@@ -142,7 +142,12 @@ class Gnome(val name: String, var activity: String) {
      * - 9-10 -> apoplectic
      */
     fun anger(): String {
-        return ""
+        if (angerLevel in 1..2) return "calm"
+        else if (angerLevel in 3..4) return "annoyed"
+        else if (angerLevel in 5..6) return "angry"
+        else if (angerLevel in 7..8) return "furious"
+        else if (angerLevel in 9..10) return "apoplectic"
+        println(anger())
     }
 
     /**
