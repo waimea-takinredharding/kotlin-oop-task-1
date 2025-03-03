@@ -130,7 +130,8 @@ class Gnome(val name: String, var activity: String) {
      *  NAME is ACTIVITY and is ANGER WORD
      */
     fun info(): String {
-        return ""
+       return activity + " " + anger()
+
     }
 
     /**
@@ -147,7 +148,7 @@ class Gnome(val name: String, var activity: String) {
         else if (angerLevel in 5..6) return "angry"
         else if (angerLevel in 7..8) return "furious"
         else if (angerLevel in 9..10) return "apoplectic"
-        println(anger())
+        return TODO("Provide the return value")
     }
 
     /**
